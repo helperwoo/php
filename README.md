@@ -1,28 +1,18 @@
-# Laravel with Docker
-- ## Intro
-```
-This is skeleton of Laravel project with Docker
-```
+# Docker PHP Boiler-Plate
+with nginx, php, mysql
+
 
 # Version
 - ## Nginx
-```
-- Nginx:latest
-```
+Nginx:latest
 
 - ## MySQL
-```
-- MySQL:8.0
-```
+MySQL:8.0
 
 - ## PHP
-```
-PHP:8.0.x
-```
+PHP:8.x
 
 - ## Laravel
-```
-- Laravel:8.x
-```
+
 
 
