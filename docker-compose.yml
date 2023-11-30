@@ -30,10 +30,10 @@ services:
       - php
     volumes:
       - ./app:/home/app
-      - ./nginx/logs:/var/log/nginx
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
+      - ./docker/nginx/logs:/var/log/nginx
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/certbot/conf:/etc/letsencrypt
+      - ./docker/certbot/www:/var/www/certbot
     ports:
       - "80:80"
       - "443:443"
