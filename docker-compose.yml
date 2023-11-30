@@ -2,9 +2,7 @@ version: "3.7"
 
 services:
   php:
-    build:
-      context: .
-      dockerfile: ./php/Dockerfile
+    build: ./docker/php
     ports:
       - "9000:9000"
     expose:
@@ -21,12 +19,12 @@ services:
       MYSQL_PASSWORD: pass
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - ./mysql/data:/var/lib/mysql:rw
+      - ./docker/mysql/data:/var/lib/mysql:rw
     ports:
       - "3307:3306"
 
   nginx:
-    image: nginx:latest
+    build: ./docker/nginx
     restart: always
     depends_on:
       - php
