@@ -13,6 +13,6 @@ MySQL:8.0
 PHP:8.x
 
 - ## Laravel
-
+Laravel:9.x
 
 
