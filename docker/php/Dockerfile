@@ -16,10 +16,15 @@ RUN apt-get install -y \
         libpq-dev \
         libxpm-dev \
         libvpx-dev \
+        libzip-dev \
         mariadb-client \
-        libxml2-dev
+        libxml2-dev \
+        vim
 
-# node 12.x install
+RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg
+RUN docker-php-ext-install mysqli pdo_mysql exif gd bcmath zip
+
+# node install
 RUN curl -sL https://deb.nodesource.com/setup_12.x
 RUN apt-get install -y nodejs
 
