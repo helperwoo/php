@@ -1,4 +1,4 @@
-# Docker PHP Boiler-Plate
+# Laravel 로컬환경 구성
 with nginx, php, mysql
 
 
