@@ -1,15 +1,9 @@
-# php 로컬환경 구성
-with nginx, php, mysql
-
+# Nginx-php-MySQL Docker Container
+Nginx, php, MySQL 컨테이너 환경을 Docker-compose를 사용하여 구성합니다.
 
 # Version
-- ## Nginx
-Nginx:latest
-
-- ## MySQL
-MySQL:8.0
-
-- ## PHP
-PHP:8.x
+- ## Nginx:latest
+- ## MySQL:8.0
+- ## PHP:8.x
 
 
