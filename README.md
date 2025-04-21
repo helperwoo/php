@@ -1,4 +1,4 @@
-# PHP Nginx MySQL with Docker 
+# PHP dev environment with Docker 
 
 This project uses Docker and Docker Compose to provide a PHP dev environment.
 
