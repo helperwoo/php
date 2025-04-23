@@ -22,7 +22,7 @@ RUN apt-get install -y \
         vim
 
 RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg
-RUN docker-php-ext-install mysqli pdo_mysql exif gd bcmath zip
+RUN docker-php-ext-install bcmath exif mysqli pdo_mysql gd zip pcntl sockets
 
 # node install
 RUN curl -sL https://deb.nodesource.com/setup_12.x
