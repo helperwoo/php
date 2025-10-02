@@ -1,5 +1,7 @@
 .idea
-/docker/nginx/logs
-/docker/mysql/data
 .env
-/app
+
+/docker/nginx/logs
+/docker/nginx/ssl
+
+/docker/mysql/data
