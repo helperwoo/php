@@ -33,7 +33,7 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql:rw
   nginx:
-    build: ./docker/nginx
+    image: nginx:latest
     container_name: nginx
     restart: unless-stopped
     networks:
